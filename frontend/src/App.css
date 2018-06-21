@@ -1,0 +1,11 @@
+#root .App-Content {
+  margin-left: 50px;
+  padding: 1em 3em 2em;
+}
+
+p, .ui.items>.item>.content>.description {
+  font-size: 1.33em;
+}
+.ui.centered.grid, .ui.centered.grid>.row, .ui.grid>.centered.row {
+  padding-top: 3em
+}
