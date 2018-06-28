@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Item, Icon, Dropdown, Button } from "semantic-ui-react";
+import { Grid, Item,  Dropdown, Button } from "semantic-ui-react";
 
 import { SORT_BY_OPTIONS } from "./reducer";
 

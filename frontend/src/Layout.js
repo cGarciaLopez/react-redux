@@ -3,9 +3,9 @@ import { NavLink, withRouter } from "react-router-dom";
 import { retrieveAll } from "./category/reducer";
 import { connect } from 'react-redux'
 import { bindActionCreators } from "redux";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-import { Button, Container, Grid, Header, Icon, Menu, Sidebar, Segment } from 'semantic-ui-react'
+import { Grid, Icon, Menu, Segment } from 'semantic-ui-react'
 import ReduxToastr from 'react-redux-toastr'
 
 class Layout extends Component {

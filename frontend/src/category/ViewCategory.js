@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card, Container, Image, Dropdown, Segment, Grid, Icon, Button } from "semantic-ui-react";
+import { Container, Image, Dropdown, Segment, Grid,  Button } from "semantic-ui-react";
 
 import PostsPreviewContainer from "../post/PostsPreviewContainer";
 import { SORT_BY_OPTIONS } from "../post/reducer";

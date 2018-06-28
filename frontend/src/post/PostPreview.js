@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-import { Card, Image, Item, Button, Label, Icon, Header } from "semantic-ui-react";
+import { Card, Image, Item, Button, Header } from "semantic-ui-react";
 import Timestamp from 'react-timestamp';
 
 import ScoreVote from "../shared/ScoreVote";
