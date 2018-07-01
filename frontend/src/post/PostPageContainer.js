@@ -9,6 +9,7 @@ import { postSelector } from "./reducer";
 import { push } from 'react-router-redux';
 
 import PostPage from "./PostPage";
+import NotFoundPage from "../NotFoundPage";
 
 class ViewCategoryContainer extends Component {
   componentDidMount() {
@@ -17,18 +18,27 @@ class ViewCategoryContainer extends Component {
 
   componentWillReceiveProps(nextProps) {
     // Post was deleted. Redirect user to category page
-    if (this.props.post && nextProps.post === undefined) {
-      this.props.redirectTo(`/${this.props.post.category}`);
+
+console.log('PostPageContainer this.props ' + this.props.post);
+console.log('PostPageContainer nextProps ' + nextProps.post);
+
+    // if (this.props.post === undefined && nextProps.post === undefined) {
+      // this.props.redirectTo(`/${this.props.post.category}`);
+      if (nextProps.post === undefined) {
+      // this.props.redirectTo('/404');
+      return null;
     }
   }
 
   render() {
-    if (!this.props.post)
-      return null;
+    if ( this.props.post === undefined) {
+        return <NotFoundPage />
+    } else {
+      return (
+        <PostPage post={this.props.post} />
+      );
+    }
 
-    return (
-      <PostPage post={this.props.post} />
-    );
   }
 }
 
